@@ -9,7 +9,7 @@ _install rootdir="" prefix="/usr/local": _build
 _build-sway:
   {{ just }} sway/cosmic-ext-sway-daemon/build-release
 
-install-sway rootdir="" prefix="/usr/local": build-sway _install
+install-sway rootdir="" prefix="/usr/local": _build-sway _install
   {{ just }} rootdir={{rootdir}} prefix={{prefix}} sway/cosmic-ext-sway-daemon/install
   install -Dm0644 sway/config-cosmic {{rootdir}}/etc/sway/config-cosmic
   install -Dm0644 sway/cosmic-ext-sway.desktop {{rootdir}}{{prefix}}/share/wayland-sessions/cosmic-ext-sway.desktop

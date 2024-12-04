@@ -514,7 +514,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cosmic-sway-daemon"
+name = "cosmic-ext-sway-daemon"
 version = "0.1.0"
 dependencies = [
  "anyhow",

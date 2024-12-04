@@ -195,5 +195,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 focus_follows_mouse no
-exec /usr/bin/cosmic-ext-alternative-startup
-exec /usr/bin/cosmic-ext-sway-daemon
+exec /usr/local/bin/cosmic-ext-alternative-startup
+exec /usr/local/bin/cosmic-ext-sway-daemon

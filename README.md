@@ -25,7 +25,7 @@ No. I won't debate you on it. Go and do this somewhere else and don't expect sup
 
 - Because it's fun!
 - (And it nicely shows off what using common standards can give you.)
--  ((Also, I can't count the amount of issues of people wanting scrolling tiling in COSMIC. Here, just use niri while we decide what to do about this. It's a great project!))
+- ((Also, I can't count the amount of issues of people wanting scrolling tiling in COSMIC. Here, just use niri while we decide what to do about this. It's a great project!))
 
 ## How?
 
@@ -41,3 +41,17 @@ For specific instructions for each environment look into their specific folder:
 - You need a `cosmic-session` binary build with this [patch](https://github.com/pop-os/cosmic-session/pull/75)
 - You will want a very recent nightly build of cosmic-panel, that fixes crashes on other compositors.
 - cosmic + your compositor of choice installed
+
+## Installation
+
+Clone this repo and initialize the submodule for [`cosmic-ext-alternative-startup`](https://github.com/drakulix/cosmic-ext-alternative-startup):
+
+```bash
+git submodule update --init --recursive
+```
+
+For example, to build and install the binaries and scripts for sway:
+
+```bash
+sudo -E just install-sway
+```
